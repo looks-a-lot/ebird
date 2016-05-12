@@ -111,7 +111,7 @@ view: observations {
   
   dimension: latitude {
     type: number
-    sql: ${TABLE}.latitude ;;
+    sql: FLOAT(${TABLE}.latitude) ;;
   }
   
   dimension: location {
@@ -137,7 +137,7 @@ view: observations {
   
   dimension: longitude {
     type: number
-    sql: ${TABLE}.longitude ;;
+    sql: FLOAT(${TABLE}.longitude) ;;
   }
   
   dimension: mysterty_column {
