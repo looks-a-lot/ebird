@@ -242,6 +242,7 @@ view: observations {
   }
   measure: species_count {
     type: count_distinct
+    drill_fields: [full_name, subspecies_common_name, common_name, scientific_name, subspecies_scientific_name, locality]
     # approximate_threshold:1000000
     sql: ${scientific_name}  ;;
   }
