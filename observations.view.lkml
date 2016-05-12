@@ -254,7 +254,7 @@ view: observations {
   
   measure: sampling_count {
     type: count_distinct
-    drill_fields: [full_name, subspecies_common_name, common_name, scientific_name, subspecies_scientific_name, locality]
+    drill_fields: [full_name, subspecies_common_name, common_name, scientific_name, subspecies_scientific_name]
     sql: ${sampling_event_identifier} ;;
   }
   
