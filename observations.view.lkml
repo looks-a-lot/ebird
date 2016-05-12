@@ -110,7 +110,7 @@ view: observations {
   }
   
   dimension: latitude {
-    type: string
+    type: number
     sql: ${TABLE}.latitude ;;
   }
   
@@ -136,7 +136,7 @@ view: observations {
   }
   
   dimension: longitude {
-    type: string
+    type: number
     sql: ${TABLE}.longitude ;;
   }
   
