@@ -253,15 +253,18 @@ view: observations {
   
   measure: sampling_count {
     type: count_distinct
+    drill_fields: [full_name, subspecies_common_name, common_name, scientific_name, subspecies_scientific_name, locality]
     sql: ${sampling_event_identifier} ;;
   }
   
   measure: average_species  {
     type: average
-    sql: ${species_count} ;;
+    drill_fields: [full_name, subspecies_common_name, common_name, scientific_name, subspecies_scientific_name, locality]
+    sql: ${species_count};;
   }
   measure: observer_count {
     type: count_distinct
+    drill_fields: [full_name, observer_id, locality, species_count]
     sql: ${observer_id};;
   }
   
